@@ -1,0 +1,147 @@
+.mainInicio {
+  width: 90%;
+  max-width: 700px;
+  margin: 50px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.imagenDeco {
+  position: absolute;
+  height: 300px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background-image: var(--bg-desktop);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.titleInicio {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 35px;
+
+  h1 {
+    color: hsl(0, 0%, 98%);
+    letter-spacing: 18px;
+  }
+}
+
+.bodyTareas {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.listPrincipal {
+  list-style: none;
+  width: 100%;
+  border-radius: 6px;
+  background: var(--bg-secondary);
+  box-shadow: rgba(0, 0, 0, 0.13) 0px 12px 15px -2px;
+}
+
+.mensajeVacio {
+  padding: 18px;
+  color: var(--text-primary);
+  border-bottom: 1px solid var(--text-secondary);
+}
+
+// seccion filtros
+
+.containTablero {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px;
+}
+
+.contador {
+  color: var(--text-gray);
+}
+.dropText {
+  color: var(--text-gray);
+  text-align: center;
+  margin-top: 50px;
+}
+
+.filtroList {
+  display: flex;
+  gap: 10px;
+  button {
+    border: none;
+    background: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: var(--text-gray);
+
+    &:hover {
+      color: var(--text-gray-hover);
+    }
+  }
+  .activeMenu {
+    color: var(--color-primary);
+    &:hover {
+      color: var(--color-primary);
+    }
+  }
+}
+
+.containClear {
+  button {
+    border: none;
+    background: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: var(--text-gray);
+
+    &:hover {
+      color: var(--text-gray-hover);
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .containTablero {
+    padding: 18px 0;
+    position: relative;
+  }
+
+  .contador {
+    padding-left: 18px;
+  }
+  .containClear {
+    padding-right: 18px;
+  }
+
+  .filtroList {
+    gap: 20px;
+    justify-content: center;
+    position: absolute;
+    border-radius: 6px;
+    width: 100%;
+    bottom: -150%;
+    background: var(--bg-secondary);
+    padding: 18px;
+    box-shadow: rgba(0, 0, 0, 0.13) 0px 12px 15px -2px;
+  }
+
+  .dropText {
+    margin: 120px 0 50px 0;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .imagenDeco {
+    height: 250px;
+    background-image: var(--bg-mobile);
+  }
+}

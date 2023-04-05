@@ -1,0 +1,93 @@
+.containTarea {
+  overflow-x: hidden;
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  border-bottom: 1px solid var(--text-secondary);
+
+  padding: 18px;
+
+  &:hover {
+    .buttonDelete {
+      opacity: 1;
+    }
+  }
+
+  .buttonDelete {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: transparent;
+    opacity: 0;
+    transition: all 500ms ease-in-out;
+    cursor: pointer;
+  }
+}
+
+.containChecked {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-right: 20px;
+}
+
+.textTarea {
+  width: 100%;
+  p {
+    font-size: 18px;
+    color: var(--text-primary);
+    word-break: break-all;
+  }
+  .active {
+    text-decoration: line-through;
+    color: var(--text-secondary);
+  }
+}
+
+.buttonCheck {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  background: linear-gradient(var(--bg-secondary), var(--bg-secondary))
+      padding-box,
+    var(--text-secondary) border-box;
+  &:hover {
+    border: 1px solid transparent;
+    background: linear-gradient(var(--bg-secondary), var(--bg-secondary))
+        padding-box,
+      var(--gradient) border-box;
+  }
+}
+
+.buttonTrue {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  background: var(--gradient);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .containTarea {
+    .buttonDelete {
+      width: max-content;
+      height: max-content;
+      opacity: 1;
+    }
+  }
+  .containChecked {
+    margin-right: 10px;
+  }
+  .textTarea {
+    margin-right: 5px;
+  }
+}

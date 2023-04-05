@@ -1,6 +1,11 @@
-import '@/styles/globals.css'
-import type { AppProps } from 'next/app'
+import "@/styles/globals.css";
+import type { AppProps } from "next/app";
+import TareaProvider from "../contexts/ListContext";
 
 export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  return (
+    <TareaProvider>
+      <Component {...pageProps} />
+    </TareaProvider>
+  );
 }

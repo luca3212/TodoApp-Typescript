@@ -1,0 +1,65 @@
+.containInput {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  width: 100%;
+  background-color: var(--bg-secondary);
+
+  border-radius: 6px;
+  padding: 18px;
+
+  margin-bottom: 25px;
+
+  form {
+    width: 90%;
+    input {
+      border: none;
+      outline: none;
+      font-size: 18px;
+      width: 100%;
+      background: none;
+      color: var(--text-primary);
+    }
+  }
+}
+
+.buttonCheck {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1px solid transparent;
+  background: linear-gradient(var(--bg-secondary), var(--bg-secondary))
+      padding-box,
+    var(--text-secondary) border-box;
+  &:hover {
+    border: 1px solid transparent;
+    background: linear-gradient(var(--bg-secondary), var(--bg-secondary))
+        padding-box,
+      var(--gradient) border-box;
+  }
+}
+
+.buttonTrue {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+
+  border: none;
+  background: var(--gradient);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .containInput {
+    gap: 10px;
+    form {
+      width: 85%;
+    }
+  }
+}

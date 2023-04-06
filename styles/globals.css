@@ -48,7 +48,7 @@ body {
   overflow-x: hidden;
   font-size: 18px;
   background: var(--bg-primary);
-
+  transition: all 500ms ease-in-out;
   position: relative;
   z-index: -2;
 }

@@ -19,8 +19,8 @@ Bold 700 */
   --text-gray: hsl(236, 9%, 61%);
   --text-gray-hover: hsl(235, 19%, 35%);
 
-  --bg-desktop: url("../public/fondos/bg-desktop-light.jpg");
-  --bg-mobile: url("../public/fondos/bg-mobile-light.jpg");
+  --bg-desktop: url("/fondos/bg-desktop-light.jpg");
+  --bg-mobile: url("/fondos/bg-mobile-light.jpg");
 }
 
 [data-theme="dark"] {
@@ -31,8 +31,8 @@ Bold 700 */
   --text-gray: hsl(236, 9%, 61%);
   --text-gray-hover: hsl(236, 33%, 92%);
 
-  --bg-desktop: url("../public/fondos/bg-desktop-dark.jpg");
-  --bg-mobile: url("../public/fondos/bg-mobile-dark.jpg");
+  --bg-desktop: url("/fondos/bg-desktop-dark.jpg");
+  --bg-mobile: url("/fondos/bg-mobile-dark.jpg");
 }
 
 * {

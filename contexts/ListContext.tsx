@@ -70,6 +70,10 @@ function TareaProvider({ children }: MyComponentProps): JSX.Element {
   const deleteChecked = () => {
     const newList = tareas.filter((tarea: Tarea) => tarea.status != true);
     setTareas(newList);
+
+    if (newList.length == 0) {
+      localStorage.removeItem("tareaListas");
+    }
   };
 
   return (

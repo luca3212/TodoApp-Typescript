@@ -60,6 +60,7 @@ export default function Input() {
           id="tarea"
           onChange={handleChange}
           value={createTarea.text || ""}
+          autoComplete="off"
         />
       </form>
     </div>

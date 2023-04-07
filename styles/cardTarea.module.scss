@@ -3,9 +3,8 @@
   width: 100%;
   display: flex;
   align-items: center;
-
+  background: var(--bg-secondary);
   border-bottom: 1px solid var(--text-secondary);
-
   padding: 18px;
 
   &:hover {
@@ -89,5 +88,11 @@
   }
   .textTarea {
     margin-right: 5px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .containTarea {
+    padding: 18px 12px;
   }
 }

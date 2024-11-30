@@ -11,6 +11,7 @@ import List from "@/components/List";
 type menu = "all" | "active" | "completed";
 
 export default function Home() {
+  const anio = new Date().getFullYear();
   const { tareas, deleteChecked } = useContext(TareaContext) as TareasContexts;
 
   const [menuActive, setMenuActive] = useState<menu>("all");
@@ -114,9 +115,9 @@ export default function Home() {
 
       <footer>
         <span>
-          Copyright © 2023 | Hecho por{" "}
+          Copyright © {anio} | Hecho por{" "}
           <Link
-            href="https://agueroluca.com.ar/"
+            href="https://agueroluca.site/"
             target="_blank"
             rel="noreferrer"
             className={styles.link}
